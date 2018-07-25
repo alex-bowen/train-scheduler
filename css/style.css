@@ -1,0 +1,62 @@
+/* coolors: https://coolors.co/073b3a-0b6e4f-08a045-6bbf59-fbfffe */
+
+
+body {
+    font-family: 'Muli', sans-serif;
+    background: #eef1f1;
+}
+
+
+#masthead {
+    background:#073B3A ;
+    color: #FBFFFE;
+    border-bottom: 8px #6BBF59 solid;
+    padding: 30px;
+    text-align: center;
+}
+
+#title {
+    font-size: 80px;
+}
+
+#directions {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.main-divs {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 70%;
+    border: 1px solid #073B3A;
+}
+
+.section-head {
+    background: #073B3A;
+    color: #FBFFFE;
+    border-bottom:4px #6BBF59 solid;
+}
+
+#submit-button {
+    background: #073B3A;
+    color: #FBFFFE;
+}
+
+#submit-button:hover {
+    background: #6BBF59;
+}
+
+.form-control{
+    margin-top: 4px;
+}
+
+.form-control:focus {
+    border: 1px #6BBF59 solid;
+    box-shadow: 0 1px 1px #00000013 inset, 0 0 3px #6BBF59;
+
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
