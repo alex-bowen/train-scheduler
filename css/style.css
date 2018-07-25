@@ -3,8 +3,8 @@
 
 body {
     font-family: 'Muli', sans-serif;
-    background: #eef1f1;
-}
+    background: #eef1f1;}
+
 
 
 #masthead {
@@ -59,4 +59,8 @@ body {
 
 .form-group {
     margin-bottom: 25px;
+}
+
+#form-div {
+    margin-bottom: 50px;
 }
