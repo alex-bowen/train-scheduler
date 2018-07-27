@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
-    var currentTime = moment();
-    // display somewhere?
+    // var currentTime = moment();
 
     // Initialize Firebase
     var config = {
@@ -21,7 +20,6 @@ $(document).ready(function () {
     var destination;
     var firstTrainTime;
     var trainFrequency;
-
 
     $("#submit-button").on("click", function () {
         event.preventDefault();
@@ -59,8 +57,6 @@ $(document).ready(function () {
         var nextTrainMeasure = moment().add(timeTilNextTrain, "minutes");
         var nextTrainTime = moment(nextTrainMeasure).format("hh:mm");
     
-
-
         // Grabs code from database and appends to table.
         $("#table-body").append(
             "<tr>" +
