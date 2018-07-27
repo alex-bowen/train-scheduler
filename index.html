@@ -7,45 +7,48 @@
     <title>Train Scheduler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Reset CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
-    <!-- Reset -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
-
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Muli" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
     <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
 </head>
 
 <body>
     <header>
         <div class="jumbotron jumbotron-fluid" id="masthead">
-            <h1 id="title">Bowen Express</h1>
-            <h3 id="directions">See schedule below or add a new train.</h3>
+            <h1 class="card-title" id="title">Bowen Custom Transit</h1>
+            <h4 id="directions">See schedule below or add a new train.</h3>
         </div>
     </header>
 
     <div id="schedule-div" class="card main-divs">
         <div class="card-header section-head">
-            <p>Current Train Schedule</p>
+            <span class="card-title">Current Train Schedule</span>
         </div>
         <div class="card-body table-responsive">
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">Train Name</th>
-                        <th scope="col">Destination</th>
-                        <th scope="col">Frequency (min)</th>
-                        <th scope="col">Next Arrival</th>
-                        <th scope="col">Minutes Away</th>
+                        <th class="table-header" scope="col">Train Name</th>
+                        <th class="table-header" scope="col">Destination</th>
+                        <th class="table-header" scope="col">Frequency (min)</th>
+                        <th class="table-header" scope="col">Next Arrival</th>
+                        <th class="table-header" scope="col">Minutes Away</th>
                     </tr>
                 </thead>
                 <tbody id="table-body">
@@ -56,7 +59,7 @@
 
     <div id="form-div" class="card main-divs">
         <div class="card-header section-head">
-            <p>Add Train</p>
+            <span class="card-title">Add Train</span>
         </div>
         <div class="card-body">
             <div class="form-group">
@@ -75,7 +78,7 @@
                 <label for="Input4">Frequency (min)</label>
                 <input type="text" class="form-control" id="frequency-input">
             </div>
-            <button type="submit" id="submit-button" class="btn">Submit</button>
+            <button type="submit" id="submit-button" class="btn any-button">Submit</button>
         </div>
     </div>
 
